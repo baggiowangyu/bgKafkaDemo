@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bgKafkaDemo", "bgKafkaDemo\bgKafkaDemo.vcproj", "{30FDDA4B-66AC-4646-AA60-6B93DEAECA1C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bgKafkaProductor", "bgKafkaProductor\bgKafkaProductor.vcproj", "{02E04A14-775A-4BF0-8FAD-B0EA3F68B16F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30FDDA4B-66AC-4646-AA60-6B93DEAECA1C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{30FDDA4B-66AC-4646-AA60-6B93DEAECA1C}.Debug|Win32.Build.0 = Debug|Win32
+		{30FDDA4B-66AC-4646-AA60-6B93DEAECA1C}.Release|Win32.ActiveCfg = Release|Win32
+		{30FDDA4B-66AC-4646-AA60-6B93DEAECA1C}.Release|Win32.Build.0 = Release|Win32
+		{02E04A14-775A-4BF0-8FAD-B0EA3F68B16F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{02E04A14-775A-4BF0-8FAD-B0EA3F68B16F}.Debug|Win32.Build.0 = Debug|Win32
+		{02E04A14-775A-4BF0-8FAD-B0EA3F68B16F}.Release|Win32.ActiveCfg = Release|Win32
+		{02E04A14-775A-4BF0-8FAD-B0EA3F68B16F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
