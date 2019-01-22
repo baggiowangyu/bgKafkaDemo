@@ -76,8 +76,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	RdKafka::Conf *conf = RdKafka::Conf::create(RdKafka::Conf::CONF_GLOBAL);
 	RdKafka::Conf *topic_conf = RdKafka::Conf::create(RdKafka::Conf::CONF_TOPIC);
 
-	std::string errstr;
-	conf->set("bootstrap.servers", brokers, errstr);
+	std::string errstr = "";
+	conf->set("metadata.broker.list", brokers, errstr);
 
 	bgEventCb bg_event_cb;
 	conf->set("event_cb", &bg_event_cb, errstr);
@@ -97,7 +97,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		return 0;
 	}
 
-	std::cout<<"% Created producer "<<producer->name()<<std::endl;
+	//std::cout<<"% Created producer "<<producer->name()<<std::endl;
 
 	// 主题
 	RdKafka::Topic *topic = RdKafka::Topic::create(producer, topic_str, topic_conf, errstr);
@@ -108,14 +108,18 @@ int _tmain(int argc, _TCHAR* argv[])
 		return 0;
 	}
 
-	for (std::string line; run && std::getline(std::cin, line);)
-	{
-		if (line.empty())
-		{
-			producer->poll(0);
-			continue;
-		}
 
+	// 这里我们稍微改造一下，变成循环插入消息
+	//for (std::string line; run && std::getline(std::cin, line);)
+	for (int index = 0; index < 10; ++index)
+	{
+		//if (line.empty())
+		//{
+		//	producer->poll(0);
+		//	continue;
+		//}
+
+		std::string line = "This is a demo for kafka producer ...";
 		RdKafka::ErrorCode resp = producer->produce(topic, partition, RdKafka::Producer::RK_MSG_COPY, const_cast<char *>(line.c_str()), line.size(), NULL, NULL);
 		if (resp != RdKafka::ERR_NO_ERROR)
 			std::cerr<<"% Producer failed: "<<RdKafka::err2str(resp)<<std::endl;
