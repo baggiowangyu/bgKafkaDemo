@@ -9,6 +9,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bgKafkaProductor", "bgKafka
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bgKafkaCustomer", "bgKafkaCustomer\bgKafkaCustomer.vcxproj", "{4EFF4E94-E79C-4F70-8211-5D76B97A6383}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kafka_producer", "kafka_producer\kafka_producer.vcxproj", "{1BF256EF-D477-49CF-B0D9-DE8754F71F13}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kafka_consumer", "kafka_consumer\kafka_consumer.vcxproj", "{369891B2-E4F3-496E-8012-F12672185F26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -27,6 +31,14 @@ Global
 		{4EFF4E94-E79C-4F70-8211-5D76B97A6383}.Debug|Win32.Build.0 = Debug|Win32
 		{4EFF4E94-E79C-4F70-8211-5D76B97A6383}.Release|Win32.ActiveCfg = Release|Win32
 		{4EFF4E94-E79C-4F70-8211-5D76B97A6383}.Release|Win32.Build.0 = Release|Win32
+		{1BF256EF-D477-49CF-B0D9-DE8754F71F13}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1BF256EF-D477-49CF-B0D9-DE8754F71F13}.Debug|Win32.Build.0 = Debug|Win32
+		{1BF256EF-D477-49CF-B0D9-DE8754F71F13}.Release|Win32.ActiveCfg = Release|Win32
+		{1BF256EF-D477-49CF-B0D9-DE8754F71F13}.Release|Win32.Build.0 = Release|Win32
+		{369891B2-E4F3-496E-8012-F12672185F26}.Debug|Win32.ActiveCfg = Debug|Win32
+		{369891B2-E4F3-496E-8012-F12672185F26}.Debug|Win32.Build.0 = Debug|Win32
+		{369891B2-E4F3-496E-8012-F12672185F26}.Release|Win32.ActiveCfg = Release|Win32
+		{369891B2-E4F3-496E-8012-F12672185F26}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
